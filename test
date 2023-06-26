@@ -1,0 +1,37 @@
+更简单的方法,来查询names里有没有superman
+if 'superman' in names:
+    print('有超人')
+else:
+    print('无超人')
+
+列表元素添加
+
+In [9]
+#声明一个空列表
+girls = []
+
+#append(),末尾追加
+girls.append('杨超越')
+print(girls)
+['杨超越']
+In [11]
+#extend(),一次添加多个。把一个列表添加到另一个列表 ，列表合并。
+models = ['刘雯','奚梦瑶']
+girls.extend(models)
+#girls = girls + models
+print(girls)
+['杨超越', '刘雯', '奚梦瑶', '刘雯', '奚梦瑶']
+In [ ]
+#insert():指定位置添加
+girls.insert(1,'虞书欣')
+print(girls)
+列表元素修改,通过下标找到元素，然后用=赋值
+
+In [10]
+fruits = ['apple','pear','香蕉','pineapple','草莓']
+print(fruits)
+
+fruits[-1] = 'strawberry'
+print(fruits)
+['apple', 'pear', '香蕉', 'pineapple', '草莓']
+['apple', 'pear', '香蕉', 'pineapple', 'strawberry']
